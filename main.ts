@@ -493,9 +493,16 @@ d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d 
 d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d 
 `)
 }
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    controller.moveSprite(Cat, 100, 100)
+})
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    controller.moveSprite(Cat, 150, 150)
+})
+let Cat: Sprite = null
 start_loading()
 pause(2000)
-let Cat = sprites.create(img`
+Cat = sprites.create(img`
 e e e . . . . e e e . . . . 
 c d d c . . c d d c . . . . 
 c b d d f f d d b c . . . . 
