@@ -493,11 +493,11 @@ d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d 
 d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d 
 `)
 }
-controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
-    controller.moveSprite(Cat, 100, 100)
-})
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    controller.moveSprite(Cat, 150, 150)
+    controller.moveSprite(Cat, 200, 200)
+})
+controller.A.onEvent(ControllerButtonEvent.Released, function () {
+    controller.moveSprite(Cat, 100, 100)
 })
 let Cat: Sprite = null
 start_loading()
