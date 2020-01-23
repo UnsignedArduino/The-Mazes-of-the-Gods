@@ -493,6 +493,12 @@ d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d 
 d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d 
 `)
 }
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    controller.moveSprite(Cat, 50, 50)
+})
+controller.B.onEvent(ControllerButtonEvent.Released, function () {
+    controller.moveSprite(Cat, 100, 100)
+})
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     controller.moveSprite(Cat, 200, 200)
 })
