@@ -1,6 +1,10 @@
 # the-mazes-of-the-gods ![Build status badge](https://github.com/unsignedarduino/the-mazes-of-the-gods/workflows/MakeCode/badge.svg)
 
+## Play on the PyGamer
+Upload the .uf2 file in the repository to the PyGamer. If you want a build for other devices, upload it to MakeCode Arcade and re-compile it for your device.
 
+## Open in MakeCode Arcade
+Upload the .uf2 file in the repository to MakeCode Arcade.
 
 ## Use this extension
 
